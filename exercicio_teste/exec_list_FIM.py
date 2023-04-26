@@ -6,4 +6,5 @@ while True:
         break
     valor_numericos = int(valor)
     numeros.append(valor_numericos)
+
 print(numeros)
