@@ -1,0 +1,5 @@
+a = int(input('Digite um valor:\n '))
+b = int(input('Digite um valor:\n '))
+c = int(input('Digite um valor:\n '))
+soma = a ** 2 + (b/c)
+print(f'O valor de raz quadrada é {soma}.')
