@@ -10,4 +10,11 @@ while True:
         break
     registro.append({'nome': nome, 'idade': idade})
 
-print(registro)
+soma = 0
+for pessoas in registro:
+    pessoas = pessoas(pessoas['idade'])
+    soma = soma + pessoas['idade']
+
+media = pessoas / len(pessoas)
+
+print(media)
