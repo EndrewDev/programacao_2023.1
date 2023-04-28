@@ -22,6 +22,6 @@ for i in range(4):
 aluno.append(alunos2)
 
 # adicionar uma varivael:
-# aleatoriamente = random.choice[aluno]
+# aleatoriamente = random.choice(aluno)
 
 print(f'Aluno(a) escolhindo aleatoriamente: {random.choice(aluno)}')
