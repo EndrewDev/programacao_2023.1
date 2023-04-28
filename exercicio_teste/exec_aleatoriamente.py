@@ -1,4 +1,5 @@
 # import random
+
 # pessoas = []
 
 # nome = input('Digite alunos separa por virgular: ')
@@ -19,6 +20,8 @@ for i in range(4):
     alunos2 = input('Digite os nomes quatros alunos:\n')
 
 aluno.append(alunos2)
+
+# adicionar uma varivael:
 # aleatoriamente = random.choice[aluno]
 
-print(f'Aluno(a) escolhindo aleatoriamente: {random.choice[aluno]}')
+print(f'Aluno(a) escolhindo aleatoriamente: {random.choice(aluno)}')
