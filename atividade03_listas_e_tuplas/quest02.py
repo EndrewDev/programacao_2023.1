@@ -1,6 +1,4 @@
 numericos = []
-maior = 0
-menor = 0
 
 print('Digite "FIM" para parar de digite qulaquer momento')
 while True:
@@ -10,4 +8,9 @@ while True:
     lista_numericos = int(valor)
     numericos.append(lista_numericos)
 
+maior = max(numericos)
+menor = min(numericos)
+
 print(numericos)
+print(f'O valor maior digitado foi:{maior}')
+print(f'O valor menor digitado foi:{menor}')
