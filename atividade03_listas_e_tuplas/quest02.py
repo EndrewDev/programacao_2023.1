@@ -11,6 +11,13 @@ while True:
 maior = max(numericos)
 menor = min(numericos)
 
-print(numericos)
 print(f'O valor maior digitado foi:{maior}')
 print(f'O valor menor digitado foi:{menor}')
+
+for i in numericos:
+    i = i
+
+conta = len(numericos)
+
+media = i / conta
+print(f'A média foi: {media}')
