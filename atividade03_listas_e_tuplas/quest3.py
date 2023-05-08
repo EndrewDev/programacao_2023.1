@@ -15,5 +15,6 @@ for i in valores:
     else:
         impares.append(i)
 
+print(f'Todos os valores: {valores}')
 print(f'A lista de pares:{pares}')
 print(f'A lista de impares:{impares}')
