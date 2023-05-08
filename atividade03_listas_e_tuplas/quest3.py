@@ -7,8 +7,8 @@ while True:
     numericos = input('Digite qualquer valor:\n')
     if numericos == "FIM" or numericos == "Fim" or numericos == "fim":
         break
-
     valores.append(int(numericos))
+    
 for i in valores:
     if i % 2 == 0:
         pares.append(i)
