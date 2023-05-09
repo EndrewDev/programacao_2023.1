@@ -20,13 +20,3 @@ for i in pessoas:
 
 cadastradas = len(pessoas)
 print(f"Quantas pessoas foram cadastradas: {cadastradas}")
-
-ordenada = []
-for o in 
-ordenada.sort(pessoas)
-print(f"Uma listagem com os nomes das pessoas ordenada por peso: {ordenada}")
-
-
-
-# imc = peso / altura**2
-# print(f'O {nome} seu IMC é {imc}')
