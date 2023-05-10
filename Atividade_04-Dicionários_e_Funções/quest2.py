@@ -13,3 +13,5 @@ while True:
         break
     imc = peso/(altura)**2
     pessoas.append({'nome': nome, 'peso': peso, 'altura': altura, 'imc': imc})
+
+print(pessoas)
