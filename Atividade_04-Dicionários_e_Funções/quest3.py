@@ -1,20 +1,16 @@
-# def area(calcula):
-#     a = calcula * calcula
-#     return a
-
-# lado = input('Digite o lado do quadrado:\n')
-# area(lado)
-# print(f'Area: {area}')
-
-# def peri(calculador):
-#     p = calculador * 4
+# def peri(c):
+#     p = c * 4
 #     return p
+# perim = float('Digite o valor de perimentro:\n')
+# peri(perim)
+# print(f'Perimentro: {peri}')
 
-def area(larg, comp):
+def area(larg, comp, c):
     a = larg * comp
-    return f'A área de um terreno {larg}x{comp} e de {a}m².'
+    p = c * 4
+    return a, p
 
 l = float(input('Largura:\n'))
-c = float(input('Comprimento:\n'))
-area(l, c)
-print(f'Controle de Terreno {area}.')
+co = float(input('Comprimento:\n'))
+peri = float(input('Digite o valor de perímetro:\n'))
+print(f'Controle de Terreno {area(l, co)}.\n O controler de perímetro: {area(peri)}')
