@@ -9,18 +9,10 @@ while True:
         break
     if email == 'END' or email =='END':
         break
-    nomegmail += nome
-    nomegmail += email
+    nomegmail.append(nome)
+    nomegmail.append(email)
 print(nomegmail)
-
-
-# nomeegmail = {'nome':'endrew', 'email':'endrew.sousa@escolar.ifrn.edu.br',
-# 'nome':'werdne', 'email':'wernde.sousa@gmail.com',
-# 'nome':'endy', 'email':'endy.sousa@gmailm.com'}
-
-# nomesemail = open('nomeegmail.pkl', 'wb')
-
-# pickle.dump(nomeegmail, nomesemail)
-# nomesemail.close()
-
+nomesemail = open('nomeegmail.pkl', 'wb')
+pickle.dump(nomegmail, nomesemail)
+nomesemail.close()
 # print(nomesemail)
