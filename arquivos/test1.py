@@ -12,7 +12,8 @@ while True:
     nomegmail.append(nome)
     nomegmail.append(email)
 print(nomegmail)
+
 nomesemail = open('nomeegmail.pkl', 'wb')
 pickle.dump(nomegmail, nomesemail)
 nomesemail.close()
-# print(nomesemail)
+print(nomesemail)
