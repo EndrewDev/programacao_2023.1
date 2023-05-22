@@ -1,2 +1,4 @@
+import pickle
 file = open('nomeegmail.pkl', 'rb')
-print(file)
+abrir = pickle.load(file)
+print(abrir)
