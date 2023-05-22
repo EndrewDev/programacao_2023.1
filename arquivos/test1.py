@@ -1,13 +1,17 @@
 import pickle
 
-nomegmail = {}
+nomegmail = []
 
 while True:
-    nomeemail = input('Digite nome e email por virgula: ')
-    if nomeemail == 'END' or nomeemail == 'end':
+    nome = input('Digite seu nome: ')
+    email = input('Digite seu email: ')
+    if nome == 'END' or nome == 'end':
         break
-    nomeemail += nomeemail
-print(nomeemail)
+    if email == 'END' or email =='END':
+        break
+    nomegmail += nome
+    nomegmail += email
+print(nomegmail)
 
 
 # nomeegmail = {'nome':'endrew', 'email':'endrew.sousa@escolar.ifrn.edu.br',
