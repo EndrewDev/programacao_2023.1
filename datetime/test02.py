@@ -4,8 +4,11 @@
 
 import datetime
 
-day = input('Digite seu nascimento: ')
-nasc_endy = datetime.date(day)
+data_nasc = []
+day = input('Digite seu nascimento formato dd/mm/aaaa: ')
+data_nasc = day.split('/')
+
+nasc_endy = datetime.date(data_nasc)
 falta = datetime.datetime.now() - nasc_endy
 print(f'Data nascimento: {nasc_endy}')
-print(f'Quantas dias faltas para próximo aniversario: {falta.days}')
+print(f'Quantas dias faltas para próximo aniversario: {falta}')
