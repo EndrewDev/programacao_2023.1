@@ -7,7 +7,7 @@ import datetime
 lista_data = []
 day = int(input('Digite sua data nascimento: '))
 lista_data += day
-
+lista_data = lista_data.split('/')
 nasc_endy = datetime.datetime(day)
 falta = datetime.datetime.now() - nasc_endy
 print(f'Data nascimento: {nasc_endy}')
