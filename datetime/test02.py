@@ -3,7 +3,6 @@
 # próximo aniversário
 
 import datetime
-from ntpath import join
 
 lista_data = []
 
