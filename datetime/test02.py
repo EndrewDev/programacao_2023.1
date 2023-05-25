@@ -3,7 +3,6 @@
 # próximo aniversário
 
 import datetime
-from re import I
 
 data_nasc = []
 day = input('Digite seu nascimento formato dd/mm/aaaa: ')
