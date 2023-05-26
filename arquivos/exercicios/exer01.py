@@ -11,4 +11,4 @@ inv_inicial = float(input('Investimento Inicial: '))
 juro_porc = float(input('Taxa de juro (em %): '))
 quantidade_meses = int(input("Meses: "))
 
-print(f'{juro_comp(inv_inicial, juro_porc, quantidade_meses)}')
+print(f'{juro_composto(inv_inicial, juro_porc, quantidade_meses)}')
