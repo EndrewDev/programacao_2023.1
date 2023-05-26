@@ -28,8 +28,5 @@ with open('pessoa_csv.txt', 'wt') as f:
     w.writerow(nomegmail)
 
 # modo pickle
-
-nomesemail = open('nomeegmail.pkl', 'wb')
-pickle.dump(nomegmail, nomesemail)
-nomesemail.close()
-print(nomesemail)
+with open('pessoas_pickle.txt', 'rb') as f:
+    dado = pickle.load(f)
