@@ -1,16 +1,19 @@
 # Faça um programa que você digita sua data de nascimento (formato
 # dd/mm/aaaa) e ele vai lhe informar quantos dias faltam para o seu
 # próximo aniversário
+from datetime import date, timedelta
 
-import datetime
+nasc = input('Digite seu nascimento formato dd/mm/aaaa: ')
 
-data_nasc = []
-day = input('Digite seu nascimento formato dd/mm/aaaa: ')
-data_nasc = day.split('/')
-for i in data_nasc:
-    i = i
+hj = date.today()
 
-nasc_endy = datetime.date(i)
-falta = datetime.datetime.now() - nasc_endy
-print(f'Data nascimento: {nasc_endy}')
-print(f'Quantas dias faltas para próximo aniversario: {falta}')
+niver_list = [int(items) for items in nasc.split('/')]
+
+niver_ano_ataul = date(hj.year,niver_list[1], niver_list[0])
+
+if niver_ano_ataul >= hj:
+    dias_para_niver = niver_ano_ataul - hj
+else:
+    dias_para_niver = niver_ano_ataul + timedelta(days=365) - hj
+    
+print(f'Faltam {dias_para_niver} para o seu aniversário!')
