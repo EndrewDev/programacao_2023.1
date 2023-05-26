@@ -1,17 +1,33 @@
 import pickle
+import csv
 
 nomegmail = []
 
 while True:
     nome = input('Digite seu nome: ')
-    email = input('Digite seu email: ')
     if nome == 'END' or nome == 'end':
         break
+    email = input('Digite seu email: ')
     if email == 'END' or email =='END':
         break
-    nomegmail.append(nome)
-    nomegmail.append(email)
+    pessoas = [nome,email]
+    nomegmail.append(pessoas)
+
 print(nomegmail)
+
+# modo manual:
+def transforma_dado(dado):
+    lista_str = []
+    for pessoa in dado:
+        lista_str.append(",".join(pessoa))
+    return "\n".join(lista_str)
+
+# modo csv:
+with open('pessoa_csv.txt', 'wt') as f:
+    w = csv.writer(f, delimiter=',')
+    w.writerow(nomegmail)
+
+# modo pickle
 
 nomesemail = open('nomeegmail.pkl', 'wb')
 pickle.dump(nomegmail, nomesemail)
