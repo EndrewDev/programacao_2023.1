@@ -3,15 +3,15 @@
 import pickle
 
 def juro_composto(i, j, m):
-    mont_in = []
-    rend_m = []
-    quant_m = []
-    calc = i * pow((1 + j), m)
-    calc = calc - i
-    return f'{calc}'
+    mont_in = [i]
+    rend_m = [j]
+    quant_m = [m]
+    calc = i * j * m
+    return calc
+    
 
-inv_inicial = float(input('Investimento Inicial: '))
-juro_porc = float(input('Taxa de juro (em %): '))
-quantidade_meses = int(input("Meses: "))
+capital_inicial = float(input('Investimento Inicial: '))
+juro_meses = float(input('Taxa de juro (em %): '))
+durante_mes = int(input("Meses: "))
 
-print(f'{juro_composto(inv_inicial, juro_porc, quantidade_meses)}')
+print(f'{juro_composto(capital_inicial, juro_meses, durante_mes)}')
