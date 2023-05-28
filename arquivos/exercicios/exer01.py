@@ -4,17 +4,17 @@ import pickle
 
 def composto(tjuro, investimento, meses):
    tjuro1=tjuros/100
-   futuro= investimento*pow(1+tjuro1,3)
+   mont_final = investimento*pow(1+tjuro1,3)
    jurototal = investimento*(pow(1+tjuro1,3)-1)
-   return futuro, jurototal
+   return mont_final, jurototal
 
 mont_ini = []
 rend_m = []
 quant_m = []
 
-investimento = float((input('\n\nInvestimento Inicial:')))
-tjuros = float((input('Taxa de Juros (em %) :')))
-meses = int(input('Meses:'))
+investimento = float((input('Investimento Inicial: ')))
+tjuros = float((input('Taxa de Juros (em %): ')))
+meses = int(input('Meses: '))
 
 mont_ini.append(investimento)
 rend_m.append(tjuros)
@@ -23,7 +23,8 @@ quant_m.append(meses)
 respo = composto(investimento, tjuros, meses)
 
 resposta = []
-resposta.append(respo)
+for i in respo:
+    resposta.append(i)
 
 print(f'O valor futuro é de {resposta[0]}')
 print(f'Os juros totais é de {resposta[1]}')
