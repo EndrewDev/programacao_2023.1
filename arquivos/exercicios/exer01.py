@@ -5,28 +5,28 @@ import pickle
 def composto(tjuro, investimento, meses):
    tjuro1=tjuros/100
    mont_final = investimento*pow(1+tjuro1,3)
-   jurototal = investimento*(pow(1+tjuro1,3)-1)
-   return mont_final, jurototal
+#    jurototal = investimento*(pow(1+tjuro1,3)-1)
+   return mont_final
 
 mont_ini = []
 rend_m = []
-quant_m = []
+quant_meses = []
+resposta = []
+listas_composto = []
 
 investimento = float((input('Investimento Inicial: ')))
 tjuros = float((input('Taxa de Juros (em %): ')))
 meses = int(input('Meses: '))
 
-mont_ini.append(investimento)
-rend_m.append(tjuros)
-quant_m.append(meses)
+for compos in mont_ini, rend_m, quant_meses:
+    listas_composto.append(mont_ini, rend_m, quant_meses)
 
 respo = composto(investimento, tjuros, meses)
 
-resposta = []
 for i in respo:
-    resposta.append(i)
+    resposta.append(float(i))
 
-print(f'O valor futuro é de {resposta[0]}')
-print(f'Os juros totais é de {resposta[1]}')
+print(f'O valor montante final: {resposta}')
 
-# with open()
+with open('listas_composto.pck.txt', 'rb') as f:
+    dado = pickle.load(f)
