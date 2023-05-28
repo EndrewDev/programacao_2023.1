@@ -3,9 +3,9 @@
 import pickle
 
 def juro_composto(i, j, m):
-    mont_in = [mon for mon in i]
-    rend_m = [r for r in j]
-    quant_m = [q for q in m]
+    mont_in = [float(mi) for mi in i]
+    rend_m = [float(r) for r in j]
+    quant_m = [int(q) for q in m]
     calc = mont_in * rend_m * quant_m
     print(f"Monatante inicial: {mont_in}")
     print(f"Rendimento Mensal: {rend_m}")
