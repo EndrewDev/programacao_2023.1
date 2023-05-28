@@ -3,10 +3,19 @@
 import pickle
 
 def juro_composto(i, j, m):
-    mont_in = [i]
-    rend_m = [j]
-    quant_m = [m]
-    calc = i * j * m
+    mont_in = []
+    rend_m = []
+    quant_m = []
+    for i in i:
+        mont_in.append(i)
+    for j in j:
+        rend_m.append(j)
+    for m in m:
+        quant_m.append(m)
+    calc = mont_in[float(0)] * rend_m[float(0)] * quant_m[float(0)]
+    print(f"Monatante inicial: {mont_in}")
+    print(f"Rendimento Mensal: {rend_m}")
+    print(f"Quantidade de meses: {quant_m}")
     return calc
     
 
