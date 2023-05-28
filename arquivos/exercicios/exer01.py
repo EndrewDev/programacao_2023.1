@@ -23,6 +23,8 @@ capital_inicial = float(input('Investimento Inicial: '))
 juro_meses = float(input('Taxa de juro (em %): '))
 durante_mes = int(input("Meses: "))
 
-print(f'{juro_composto(capital_inicial, juro_meses, durante_mes)}')
+resp = juro_composto(capital_inicial, juro_meses, durante_mes)
+
+print(resp)
 
 # with open()
