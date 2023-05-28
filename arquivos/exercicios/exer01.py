@@ -6,13 +6,13 @@ def juro_composto(i, j, m):
     mont_in = []
     rend_m = []
     quant_m = []
-    for i in i:
-        mont_in.append(i)
-    for j in j:
-        rend_m.append(j)
-    for m in m:
-        quant_m.append(m)
-    calc = mont_in[float(0)] * rend_m[float(0)] * quant_m[float(0)]
+    for m in i:
+        mont_in.append(m)
+    for r in j:
+        rend_m.append(r)
+    for q in m:
+        quant_m.append(q)
+    calc = mont_in * rend_m * quant_m
     print(f"Monatante inicial: {mont_in}")
     print(f"Rendimento Mensal: {rend_m}")
     print(f"Quantidade de meses: {quant_m}")
@@ -24,3 +24,5 @@ juro_meses = float(input('Taxa de juro (em %): '))
 durante_mes = int(input("Meses: "))
 
 print(f'{juro_composto(capital_inicial, juro_meses, durante_mes)}')
+
+# with open()
