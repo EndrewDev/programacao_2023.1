@@ -1,5 +1,6 @@
+listas_pessoas = []
+
 while True:
-    listas_pessoas = []
     print("Quer sair digite 'SAIR'")
     nome = input('Digite seu nome: ')
     if nome == 'SAIR' or nome == 'sair':
@@ -13,8 +14,11 @@ while True:
     altura = float(input('Digite seu altura: '))
     if altura == 'SAIR' or altura == 'sair':
         break
-    listas_pessoas.append(nome, sobrenome, idade, altura)
+    idade = int(idade)
+    altura = float(altura)
+    listas_pessoas.append({'nome': nome, 'sobrenome': sobrenome, 'idade': idade, 'altura': altura})
     respostas = listas_pessoas
 
 for i in respostas:
     print(i)
+
