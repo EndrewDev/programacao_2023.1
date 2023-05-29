@@ -43,11 +43,11 @@ def cedula(valor):
                 break
     listas_cedulas.append({'R$200': doiscento, 'R$100': cem, 'R$50': cinqueta, 'R$10': dez, 'R$5': cinco, 'R$1': um})
     respostas = print(f'{listas_cedulas}')
-    return
+    return respostas
 
 saca = float(input('Digite o valor que você quer sacar: '))
 
 transformar = print(cedula(saca))
 
-with open('listas_cedulas.pick', 'rb') as f:
+with open('listas_cedulas.pick.txt', 'wb') as f:
     dado = pickle.dump(transformar, f)
