@@ -28,5 +28,5 @@ with open('pessoa_csv.txt', 'wt') as f:
     w.writerow(nomegmail)
 
 # modo pickle
-with open('pessoas_pickle.txt', 'rb') as f:
-    dado = pickle.load(f)
+# with open('pessoas_pickle.txt', 'rb') as f:
+#     dado = pickle.load(f)
