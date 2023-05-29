@@ -41,7 +41,7 @@ def cedula(valor):
             totalced = 0
             if total == 0:
                 break
-    listas_cedulas.append({'200': doiscento, '100': cem, '50': cinqueta, '10': dez, '5': cinco, '1': um})
+    listas_cedulas.append({'R$200': doiscento, 'R$100': cem, 'R$50': cinqueta, 'R$10': dez, 'R$5': cinco, 'R$1': um})
     respostas = print(f'{listas_cedulas}')
     return
 
