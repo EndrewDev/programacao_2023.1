@@ -48,3 +48,6 @@ def cedula(valor):
 saca = float(input('Digite o valor que você quer sacar: '))
 
 print(cedula(saca))
+
+with open('listas_cedulas.pick', 'rb') as f:
+    dado = pickle.load(f)
