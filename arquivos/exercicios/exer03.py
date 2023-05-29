@@ -21,8 +21,12 @@ while True:
     listas_pessoas.append({'nome': nome, 'sobrenome': sobrenome, 'idade': idade, 'altura': altura})
     respostas = listas_pessoas
 
-for i in respostas:
-    print(i)
+def transforma_dados(dados):
+    for i in dados:
+        respo = print(i)
+    return respo
+transforma_dados(respostas)
 
-with open('contatos.json', 'w') as f:
-    contatos = json.load(listas_pessoas, f)
+with open('listas_pessoas.json', 'w') as f:
+    dados = json.dump(respostas, f)
+    print(dados)
