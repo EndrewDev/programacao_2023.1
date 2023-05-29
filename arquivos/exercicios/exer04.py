@@ -2,6 +2,7 @@ import datetime
 import pickle
 
 def transforma_datas(data):
+    dias = ['segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sabádo', 'domingo']
     listas_semnas = []
     x = datetime.datetime(data)
     semanas = x.weekday()
