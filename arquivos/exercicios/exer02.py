@@ -1,8 +1,17 @@
+import pickle
+
 def cedula(valor):
     listas_cedulas = []
-    total = valor
+    total = int(valor)
     cedula = 200
     totalced = 0
+    doiscento = 0
+    cem = 0
+    cinqueta = 0
+    vinte = 0
+    dez = 0
+    cinco = 0
+    um = 0
     while True:
         if total >= cedula:
             total -= cedula
@@ -10,30 +19,32 @@ def cedula(valor):
         else:
             print(f'Total {totalced} cédulas de R$: {cedula} ')
             if cedula == 200:
+                doiscento += 1
                 cedula = 100
             elif cedula == 100:
+                cem += 1
                 cedula = 50
             elif cedula == 50:
+                cinqueta += 1 
                 cedula = 20
             elif cedula == 20:
+                vinte += 1
                 cedula = 10
             elif cedula == 10:
+                dez += 1
                 cedula = 5
             elif cedula == 5:
+                cinco += 1
                 cedula = 1
             elif cedula == 1:
                 cedula = 0
-            listas_cedulas.append({'valor': valor, '200': listas_cedulas[0], '100': listas_cedulas[1], '50': listas_cedulas[2], '20': listas_cedulas[3], '10': listas_cedulas[4], '5': listas_cedulas[5], '1': listas_cedulas[6]})
             totalced = 0
             if total == 0:
                 break
-    return listas_cedulas
+    listas_cedulas.append({'200': doiscento, '100': cem, '50': cinqueta, '10': dez, '5': cinco, '1': um})
+    respostas = print(f'{listas_cedulas}')
+    return
 
 saca = float(input('Digite o valor que você quer sacar: '))
 
-x = cedula(saca)
-# for i in x:
-#     lista_cedulas.append(i)
-#     print(lista_cedulas)
-
-print(x)
+print(cedula(saca))
