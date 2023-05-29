@@ -1,4 +1,5 @@
 import datetime
+import pickle
 
 def transforma_datas(data):
     listas_semnas = []
