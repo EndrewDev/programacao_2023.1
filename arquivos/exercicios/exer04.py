@@ -9,9 +9,9 @@ def transforma_datas(data):
     for i in data:
         listas_datas.append(i)
     data = datetime.datetime(listas_datas)
-    for i in data:
-        if i == data.weekday(6):
-            print(i)
+    for seamana in data:
+        if seamana == data.weekday(6):
+            print(f"Quantas tem os dias dos seamana")
     return
 
 datas = datetime.date(2020, 4, 5)
