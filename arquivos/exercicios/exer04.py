@@ -6,7 +6,8 @@ import pickle
 
 def transforma_datas(data):
     listas_datas = []
-    listas_datas.append(data)
+    for i in data:
+        listas_datas.append(i)
     data = datetime.datetime(listas_datas)
     for i in data:
         if i == data.weekday(6):
