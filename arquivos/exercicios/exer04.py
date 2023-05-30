@@ -5,7 +5,7 @@ import pickle
 # print(calendar.month(2020, 4))
 
 def transforma_datas(datainicio):
-    comeca = date(datainicio).isocalendar()
+    comeca = date(datainicio)
     for i in comeca:
         dias = 0
         if i == comeca.weekday(6):
@@ -15,10 +15,9 @@ def transforma_datas(datainicio):
         final = print(f'Tens qunatas dias de semanas: {dias}')
     return final
 
-data_comeca = date(2020, 4, 6)
+data_comeca = date(2020, 4, 5)
 
-respostas = transforma_datas(data_comeca, data_final)
-
+respostas = transforma_datas(data_comeca)
 print(respostas)
 
 with open('data.pick.txt', 'wb') as f:
