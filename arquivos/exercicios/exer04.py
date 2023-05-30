@@ -10,8 +10,6 @@ def transforma_datas(datainicio):
         dias = 0
         if dia == comeca:
             dias += 1
-        else:
-            break
         final = print(f'Tens qunatas dias de semanas: {dias}')
     return final
 
