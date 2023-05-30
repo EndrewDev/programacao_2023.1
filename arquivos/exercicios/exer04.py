@@ -4,13 +4,18 @@ import pickle
 
 # print(calendar.month(2020, 4))
 
-def transforma_datas(datainicio, datafinal):
+def transforma_datas(datainicio):
     comeca = date(datainicio).isocalendar()
-    final = date(datafinal).isocalendar()
-    return f'Tens quantas dais dos domingos: {comeca} e {final}'
+    for i in comeca:
+        dias = 0
+        if i == comeca.weekday(6):
+            dias += 1
+        else:
+            break
+        final = print(f'Tens qunatas dias de semanas: {dias}')
+    return final
 
 data_comeca = date(2020, 4, 6)
-data_final = date(2020, 4, 6)
 
 respostas = transforma_datas(data_comeca, data_final)
 
