@@ -11,7 +11,7 @@ def transforma_datas(data):
     data = datetime.datetime(listas_datas)
     for seamana in data:
         if seamana == data.weekday(6):
-            print(f"Quantas tem os dias dos seamana")
+            print(f"Quantas tem os dias dos seamana: {data}")
     return
 
 datas = datetime.date(2020, 4, 5)
