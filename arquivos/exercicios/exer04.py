@@ -1,17 +1,20 @@
 import datetime
 import pickle
+# import calendar
+
+# print(calendar.month(2020, 4))
 
 def transforma_datas(data):
-    dias = ['segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sabádo', 'domingo']
-    listas_semnas = []
-    x = datetime.datetime(data)
-    semanas = x.weekday()
-    dias = x.day
-    anos = x.year
-    meses = x.month
-    listas_semnas.append({'dias': dias, 'semanas': semanas, 'mês': meses, 'anos': anos})
+    listas_datas = []
+    listas_datas.append(data)
+    data = datetime.datetime(listas_datas)
+    for i in data:
+        if i == data.weekday(6):
+            print(i)
+    return
 
-datas = datetime.datetime(2020, 4, 6)
+datas = datetime.date(2020, 4, 5)
+
 respostas = transforma_datas(datas)
 
 print(respostas)
