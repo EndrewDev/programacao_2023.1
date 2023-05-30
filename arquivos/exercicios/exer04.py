@@ -5,11 +5,10 @@ import pickle
 # print(calendar.month(2020, 4))
 
 def transforma_datas(datainicio):
-    comeca = date(datainicio)
-    semanas = comeca.weekday()
-    for i in comeca:
+    comeca = date(datainicio).weekday(6)
+    for dia in comeca:
         dias = 0
-        if i == semanas:
+        if dia == comeca:
             dias += 1
         else:
             break
