@@ -6,7 +6,7 @@ import calendar
 
 def transforma_datas(datainicio):
     comeca = date(datainicio)
-    listas_semanas = ['segunda-feira', 'terça-feira', 'quarta-feira', 'quieIra-feira', 'sexta-feira', 'sábado', 'domingo']
+    listas_semanas = ['segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado', 'domingo']
     seegundas = []
     tercas = []
     quartas = []
@@ -22,7 +22,12 @@ def transforma_datas(datainicio):
         quartas.append(comeca.weekday(2))
     elif listas_semanas[3] == comeca.weekday(3):
         quintas.append(comeca.weekday(3))
-    elif
+    elif listas_semanas[4] == comeca.weekday(4):
+        sextas.append(comeca.weekday(4))
+    elif listas_semanas[5] == comeca.weekday(5)
+        sabados.append(comeca.weekday(5))
+    elif listas_semanas[6] == comeca.weekday(6):
+        domingos.append(comeca.weekday(6))
     final = print(f'Tens qunatas dias de semanas: {dias}')
     return final
 
