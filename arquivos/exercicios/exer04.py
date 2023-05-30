@@ -6,9 +6,10 @@ import pickle
 
 def transforma_datas(datainicio):
     comeca = date(datainicio)
+    semanas = comeca.weekday()
     for i in comeca:
         dias = 0
-        if i == comeca.weekday(6):
+        if i == semanas:
             dias += 1
         else:
             break
