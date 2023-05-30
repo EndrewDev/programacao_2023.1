@@ -5,7 +5,7 @@ import calendar
 # print(calendar.month(2020, 4))
 
 def transforma_datas(datainicio):
-    comeca = date(datainicio).weekday(6)
+    comeca = date(datainicio)
     domingos = []
     while True:
         if comeca.weekday(6) == comeca.days():
