@@ -16,19 +16,17 @@ if documentos != caminho2:
 else:
     print('Diretório existe')
 
-text = input('Digite um nome de pasta para ler: ')
-caminho3 = os.path.isfile(text)
-if text != caminho3:
+arquivo = input('Digite um nome de pasta para ler: ')
+caminho3 = os.path.isfile(arquivo)
+if arquivo != caminho3:
     print('Essa pasta não existe')
-    texto = input('Digite um nome da pasta: ')
 else:
     print('Diretório existe')
 
+caminho_4 = f'/{diretorio}/{documentos}/{arquivo}'
+existe = os.path.exists(caminho_4)
 
-caminho4 = print(f'/{diretorio}/{documentos}/{text}')
-existe = os.path.exists(caminho4)
-
-if caminho4 != existe:
+if caminho_4 != existe:
     print('Achamos')
 else:
     print('Isso não existe')
