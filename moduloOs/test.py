@@ -23,8 +23,8 @@ if arquivo != caminho3:
 else:
     print('Diretório existe')
 
-caminho_4 = f'/{diretorio}/{documentos}/{arquivo}'
-existe = os.path.exists(caminho_4)
+caminho_4 = f'/home/{diretorio}/{documentos}/{arquivo}'
+existe = os.walk(caminho_4)
 
 if caminho_4 != existe:
     print('Achamos')
