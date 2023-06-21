@@ -1,9 +1,8 @@
 import json
 
 openfile = open('apache_logs.txt', 'tw')
-print(json.loads(openfile))
+dic_dados = {}
 
-# with open('apache_logs.txt', 'rt') as openfile:
-#     json_objeto = json.loads(openfile)
-#     for i in json_objeto:
-#         print(i)
+with open(openfile) as f:
+    for i in f:
+        i, description = i.strip().split(None, 1)
