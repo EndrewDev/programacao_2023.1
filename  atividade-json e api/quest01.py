@@ -4,5 +4,5 @@ with open('apache_logs.txt', 'r',encoding='utf-8') as arq:
 
 lista_dados = []
 lista_dados.append(texto)
-
-dic_dados = {'IP de origem': lista_dados[0], 'identd': lista_dados[1], 'user': lista_dados[2], 'data/hora': lista_dados[3], 'Requisição HTTP': lista_dados[4], 'Código de status HTTP': lista_dados[5], 'Bytes': lista_dados[6], 'Pagina de origem': lista_dados[7], 'Navegador': lista_dados[9]}
+for i in lista_dados:
+    print(f'IP de origem:', {i[0:12]}, 'identd:', {i[13]}, 'user:', {i[15]}, 'data/hora:', {i[17:45]}, 'Requisição HTTP:', {i[46:125]}, 'Código de status HTTP:', {i[126:129]}, 'Bytes:', {i[130:136]}, 'Pagina de origem:', {i[137:202]}, 'Navegador:', {i[203:324]})
