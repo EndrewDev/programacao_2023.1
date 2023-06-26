@@ -5,8 +5,7 @@ dic_cotacao = {}
 
 def cotacao():
     data = input('Digite a data para receber o documetno da cotação (formatada aaaa-mm-dd): ')
-    lista.append(data)
-    lista1 = lista.split('-')
+    lista.append(data.split('-'))
     requisicao = httpx.get('https://economia.awesomeapi.com.br/all/USD-BRL/')
     cotacoa = requisicao.json()
     for i,v in cotacoa.items():
