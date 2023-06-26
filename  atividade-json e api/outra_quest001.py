@@ -8,6 +8,7 @@ def cotacao():
     lista.append(data.split('-'))
     requisicao = httpx.get('https://economia.awesomeapi.com.br/all/USD-BRL/')
     cotacoa = requisicao.json()
+
     for i,v in cotacoa.items():
         if cotacao['USD']['create_date'] != data:
             data1 = datetime.datetime(lista[0], lista[1], lista[2])
@@ -17,6 +18,7 @@ def cotacao():
         else:
             if cotacao == data:
                 print('{}:{}'.format(i, v))
+                
     return cotacoa
 
 cotacao()
