@@ -1,8 +1,10 @@
 from datetime import datetime
 
 class Contabancaira:
+    """Conta Bancária"""
+
     def __init__(self, titula, agencia, numero):
-        """Conta Bancária"""
+        """Conta Bancaria"""
 
         self.titula = titula
         self.agencia = agencia
@@ -21,9 +23,9 @@ class Contabancaira:
         """SACAR"""
 
         self.valor = valor
-        if self.valor <= self.deposita:
-            self.valor -= self.deposita
-        else:
-            if self.valor > self.deposita:
-                except AttributeError:
+        if self.valor > self.deposita:
+            try:
+                except ValueError:
+                    print("Esse valor está limitando. Peça menos valor")
+    # def 
 
