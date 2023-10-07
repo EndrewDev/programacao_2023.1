@@ -1,7 +1,7 @@
 numeros = []
 
 while True:
-    valor = input('Digite um valor ou "Fim" para terminar:\n')
+    valor = input('Digite um valor ou "Fim" para terminar: ')
     if valor == 'FIM' or valor == 'fim':
         break
     valor_numericos = int(valor)
