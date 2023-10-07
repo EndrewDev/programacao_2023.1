@@ -2,10 +2,10 @@ registro = []
 
 while True:
     print('Para sair digite "SAIR" a qualquer momento')
-    nome = input('Digite o nome:\n')
+    nome = input('Digite o nome: ')
     if nome == 'SAIR' or nome == 'sair':
         break
-    idade = input('Digite idade:\n')
+    idade = input('Digite idade: ')
     if idade == 'SAIR' or idade == 'sair':
         break
     registro.append({'nome': nome, 'idade': idade})
