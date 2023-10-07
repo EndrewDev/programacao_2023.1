@@ -1,6 +1,6 @@
 meses = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'jumho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
 
-data_str = input('Digite a data no formato "dd/mm/aaaa":\n')
+data_str = input('Digite a data no formato "dd/mm/aaaa": ')
 
 data = data_str.split('/')
 
