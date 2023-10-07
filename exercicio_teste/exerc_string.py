@@ -1,4 +1,4 @@
-entrada = input('Entre os coeficientes A, B ,C por virgula:\n ')
+entrada = input('Entre os coeficientes A, B ,C por virgula: ')
 
 coef = entrada.split(',')
 coef2 = []
